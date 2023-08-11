@@ -1,11 +1,20 @@
 import './ImageBackgroundSection.css';
 
+
+import { useNavigate } from "react-router-dom";
+
+
 export default function ImageBackgroundSection({
   backgroundImage,
   header,
   description,
   featureItems = [],
 }) {
+  const navigate = useNavigate();
+
+  const handleOrderNowClick = () => {
+    navigate("/shop");
+  };
   return (
     <div
       className="image-background"
@@ -28,9 +37,9 @@ export default function ImageBackgroundSection({
             </ul>
           )}
           <div>
-            <button>Order Now</button>
+            <button onClick={handleOrderNowClick}>Order Now</button>
             <button>Demo Drive</button>
-          </div>
+          </div>  
         </div>
       </div>
     </div>

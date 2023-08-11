@@ -2,6 +2,7 @@ import './HomeSectionVideo.css';
 import teslaVid from '../../assets/tesla-vid.mp4';
 
 export default function HomeSectionVideo() {
+  
   return (
     <div>
       <video className="video-background" autoPlay muted loop>
@@ -13,7 +14,7 @@ export default function HomeSectionVideo() {
           <h5>Schedule a demo drive today</h5>
         </div>
         <div>
-          <button>Demo Drive</button>
+          <button >Demo Drive</button>
         </div>
       </div>
     </div>
